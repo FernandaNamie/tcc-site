@@ -24,7 +24,7 @@ function App() {
         <br/>
         <div className="Home-subtitle">Metodologia</div>
         <p className="Home-text">O trabalho foi estruturado em cinco etapas principais:</p>
-        <p className="Home-text">1. Coleta automatizada de textos acadêmicos: Utilizou-se a ferramenta PyPaperBot para reunir artigos relacionados a bases de dados de Esclerose Lateral Amiotrófica.</p>
+        <p className="Home-text">1. Coleta de textos acadêmicos: Reunir artigos relacionados a bases de dados de Esclerose Lateral Amiotrófica.</p>
         <p className="Home-text">2. Pré-processamento dos textos: Foi realizada a extração dos resumos dos artigos e a simplificação das informações para adequação aos modelos.</p>
         <p className="Home-text">3. Aplicação de modelos de NLP: Três modelos foram utilizados para identificar os tipos de dados abordados nos textos. Para validação das informações coletadas, foi implementada a técnica de Triple Modular Redundancy.</p>
         <p className="Home-text">4. Disponibilização dos resultados por API: Os resultados processados pelos modelos foram integrados em uma API.</p>
@@ -34,7 +34,7 @@ function App() {
         <div>
           <br/>
           <div className='Home-text'>Dos 980 artigos resultantes da pesquisa no Google Scholar, 675 puderam ser baixados. Dentre estes, foram coletados datasets para 419 artigos, tipos de dados para 411 artigos e quantidade de dados para 484 artigos. Informações quantificáveis são resumidas pelos gráficos a seguir.</div>
-          <div className="Summary" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
+          <div className="Summary" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20, width: "100vh" }}>
             <div><p className='Home-text'>Publicações coletadas por ano</p><img src={plotYear} alt="/plotYear" /></div>
             <div><p className='Home-text'>Distribuição dos tipos de dados coletados</p><img src={plotDataType} alt="/plotDataType" /></div>
             <div><p className='Home-text'>Distribuição da quantidade de dados nos datasets</p><img src={plotAmountData} alt="/plotAmountData" /></div>
